@@ -10,8 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharusatBookStore">
         <activity
+            android:name=".rpcpdepartment"
+            android:exported="true" />
+        <activity
+            android:name=".pdpiasdepartment"
+            android:exported="true" />
+        <activity
+            android:name=".i2imdepartment"
+            android:exported="true" />
+        <activity
+            android:name=".depstardepartment"
+            android:exported="true" />
+        <activity
+            android:name=".cspitdepartment"
+            android:exported="true" />
+        <activity
+            android:name=".cmpicadepartment"
+            android:exported="true" />
+        <activity
             android:name=".login"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,9 +41,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

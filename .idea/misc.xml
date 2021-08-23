@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_cmpicadepartment.xml" value="0.265625" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_cspitdepartment.xml" value="0.265625" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_depstardepartment.xml" value="0.2515625" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_i2imdepartment.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_login.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_main.xml" value="0.265625" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_pdpiasdepartment.xml" value="0.265625" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_rpcpdepartment.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_sign_up.xml" value="0.265625" />
       </map>
     </option>
