@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#536AEA">
+    tools:context=".sem">
 
     <ScrollView
         android:layout_width="409dp"
@@ -362,4 +362,5 @@
             </androidx.gridlayout.widget.GridLayout>
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
