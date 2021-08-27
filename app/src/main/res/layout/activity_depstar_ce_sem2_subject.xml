@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rpcpdepcolor"
+    tools:context=".Depstar_CE_Sem2_Subject">
+
+    <TextView
+        android:id="@+id/sem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Semester 2"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/oopc"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:text="Object Oriented Programming With C++"
+        app:cornerRadius="25dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/physics"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:text="Engineering Physics"
+        app:cornerRadius="25dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/ee"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="212dp"
+        android:text="Elements Of Engineering"
+        app:cornerRadius="25dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/maths2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="264dp"
+        android:text="Engineering Mathematics-2"
+        app:cornerRadius="25dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/hss1"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="316dp"
+        android:text="Communication Skills-1"
+        app:cornerRadius="25dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+</RelativeLayout>
