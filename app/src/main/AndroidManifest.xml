@@ -10,20 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharusatBookStore">
         <activity
-            android:name=".college"
+            android:name=".Depstar_CE_Sem4_Subject"
+            android:exported="true" />
+        <activity
+            android:name=".Depstar_CE_Sem2_Subject"
+            android:exported="true" />
+        <activity
+            android:name=".Depstar_CE_Sem1_Subject"
+            android:exported="true" />
+        <activity
+            android:name=".Depstar_CE_Sem3_Subject"
+            android:exported="true" />
+        <activity
+            android:name=".Sem2_Subject"
+            android:exported="true" />
+        <activity
+            android:name=".sem"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".cspitsem1subject"
-            android:exported="true" />
-        <activity
-            android:name=".sem"
-            android:exported="true">
         </activity>
         <activity
             android:name=".rpcpdepartment"
