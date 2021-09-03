@@ -1,9 +1,14 @@
 package com.example.charusatbookstore
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageButton
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 
 class college : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +43,27 @@ class college : AppCompatActivity() {
         ib6.setOnClickListener{
             val Intent = Intent(this,i2imdepartment::class.java)
             startActivity(Intent)
+        }
+    }
+    //otion menue
+    override fun onCreateOptionsMenu (menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu,menu)
+        return true
+    }
+    //option menue commands and next activity
+    override fun onOptionsItemSelected(item: MenuItem):Boolean{
+        return when(item.itemId){
+            R.id.logout->{
+                FirebaseAuth.getInstance().signOut()
+                startActivity(Intent(this, login::class.java))
+                true
+            }
+            R.id.edit->{
+                Toast.makeText(this,"go to profile", Toast.LENGTH_SHORT).show()
+                true
+            }
+            else ->super.onOptionsItemSelected(item)
+
         }
     }
 }

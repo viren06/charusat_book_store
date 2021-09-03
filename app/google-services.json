@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "259016724202",
+    "project_id": "charusat-book-store",
+    "storage_bucket": "charusat-book-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259016724202:android:6f80d253ed3a4ab4a81193",
+        "android_client_info": {
+          "package_name": "com.example.charusatbookstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259016724202-qqd2neuguppeiomr89eg1cml6o49jea3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASmBWLACrb7vOsp5uj2lkZbignRuD4mMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259016724202-qqd2neuguppeiomr89eg1cml6o49jea3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
