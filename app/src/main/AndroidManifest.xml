@@ -53,6 +53,11 @@
         <activity
             android:name=".cmpicadepartment"
             android:exported="true" />
+
+        <activity
+            android:name=".sign_up"
+            android:exported="true" />
+
         <activity
             android:name=".login"
             android:exported="true" >

@@ -37,6 +37,7 @@ class sign_up : AppCompatActivity() {
             var password=findViewById<EditText>(R.id.signup_password)
             var username=findViewById<EditText>(R.id.signup_userrname)
             var name=findViewById<EditText>(R.id.signup_fullname)
+            var mobile_number=findViewById<EditText>(R.id.signup_number)
 
             var progressDialog=ProgressDialog(this)
             progressDialog.setTitle("It will take some time")
@@ -49,6 +50,7 @@ class sign_up : AppCompatActivity() {
                 TextUtils.isEmpty(password.text.toString())->Toast.makeText(this,"Enter password",Toast.LENGTH_LONG).show()
                 TextUtils.isEmpty(username.text.toString())->Toast.makeText(this,"Enter username",Toast.LENGTH_LONG).show()
                 TextUtils.isEmpty(name.text.toString())->Toast.makeText(this,"Enter full name",Toast.LENGTH_LONG).show()
+                TextUtils.isEmpty(mobile_number.text.toString())->Toast.makeText(this,"Enter mobile number",Toast.LENGTH_LONG).show()
                 else->{
                     var emailStud="[a-zA-Z0-9._-]+@charusat.edu.in".toRegex()
                     if (email.text?.matches(emailStud)!!){
@@ -58,10 +60,12 @@ class sign_up : AppCompatActivity() {
                             if (it.isSuccessful){
                                 var user=mauth.currentUser
                                 var hashMap=HashMap<String,Any>()
+                                //firebase data entry
                                 hashMap["username"]=username.text.toString()
                                 hashMap["email"]=email.text.toString()
                                 hashMap["uid"]=user!!.uid
                                 hashMap["name"]=name.text.toString()
+                                hashMap["mobile_number"]=mobile_number.text.toString()
 
                                 var myref=FirebaseDatabase.getInstance().getReference("user")
                                 myref.child(user!!.uid.toString()).setValue(hashMap).addOnCompleteListener(this){
