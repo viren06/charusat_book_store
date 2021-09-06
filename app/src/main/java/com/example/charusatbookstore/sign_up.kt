@@ -14,13 +14,13 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.FirebaseDatabase
 
 class sign_up : AppCompatActivity() {
+
     override fun onStart(){
         super.onStart()
         var user=FirebaseAuth.getInstance().currentUser
         if(user!=null)
             updateUi(user)
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,9 +30,14 @@ class sign_up : AppCompatActivity() {
             startActivity(Intent(this,login::class.java))
             finish()
         }
+
+        var isAllFieldsChecked = false
+
 //sign up
         val button4=findViewById<Button>(R.id.button4)
         button4.setOnClickListener{
+            //check password and mobile number
+            isAllFieldsChecked = checkAllFields()
             var email=findViewById<EditText>(R.id.signup_email)
             var password=findViewById<EditText>(R.id.signup_password)
             var username=findViewById<EditText>(R.id.signup_userrname)
@@ -51,10 +56,13 @@ class sign_up : AppCompatActivity() {
                 TextUtils.isEmpty(username.text.toString())->Toast.makeText(this,"Enter username",Toast.LENGTH_LONG).show()
                 TextUtils.isEmpty(name.text.toString())->Toast.makeText(this,"Enter full name",Toast.LENGTH_LONG).show()
                 TextUtils.isEmpty(mobile_number.text.toString())->Toast.makeText(this,"Enter mobile number",Toast.LENGTH_LONG).show()
+
                 else->{
                     var emailStud="[a-zA-Z0-9._-]+@charusat.edu.in".toRegex()
-                    if (email.text?.matches(emailStud)!!){
+                    var emailFac="[a-zA-Z0-9._-]+@charusat.ac.in".toRegex()
+                    if (email.text?.matches(emailStud)!! || email.text?.matches(emailFac)!! ){
                         Toast.makeText(this,"charusat",Toast.LENGTH_SHORT).show()
+
                         var mauth=FirebaseAuth.getInstance()
                         mauth.createUserWithEmailAndPassword(email.text.toString(),password.text.toString()).addOnCompleteListener(this) {it->
                             if (it.isSuccessful){
@@ -93,6 +101,23 @@ class sign_up : AppCompatActivity() {
             progressDialog.dismiss()
         }
     }
+
+
+    //checking length of mobile number and passeord
+    private fun checkAllFields(): Boolean {
+        var password1=findViewById<EditText>(R.id.signup_password)
+        var mobile_number1=findViewById<EditText>(R.id.signup_number)
+        if (password1.length()<8){
+            password1.setError("password must be minimum 8 characters")
+        }
+        if (mobile_number1.length()<10){
+            mobile_number1.setError("mobile number must be 10 digits")
+        }
+        return true
+
+    }
+
+
     private fun updateUi(user: FirebaseUser?) {
         if(user!!.isEmailVerified)
         {
