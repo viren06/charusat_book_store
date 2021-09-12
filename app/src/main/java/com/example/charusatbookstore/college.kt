@@ -11,7 +11,15 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 class college : AppCompatActivity() {
+    override fun onStart(){
+        super.onStart()
+        var user=FirebaseAuth.getInstance().currentUser
+        if(user==null)
+            startActivity(Intent(this,login::class.java))
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_college)
         val ib1=findViewById<ImageButton>(R.id.idimageButtondepstar)
@@ -59,7 +67,7 @@ class college : AppCompatActivity() {
                 true
             }
             R.id.edit->{
-                Toast.makeText(this,"go to profile", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, edit_profile::class.java))
                 true
             }
             else ->super.onOptionsItemSelected(item)
