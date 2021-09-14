@@ -15,4 +15,11 @@
     <color name="cspitdepcolor">#ffa64d</color>
     <color name="dark">#444422</color>
     <color name="background">#DAF7A6</color>
+
+    <color name="darkgreen">#01B636</color>
+    <color name="green">#3BD16F</color>
+    <color name="lightgreen">#74E39A</color>
+    <color name="whiteish">#E3E3E3</color>
+    <color name="gray">#989898</color>
+
 </resources>
