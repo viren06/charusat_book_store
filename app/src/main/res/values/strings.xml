@@ -3,4 +3,33 @@
     <string name="sem1">Sem 1</string>
     <string name="sem_1">Sem 1</string>
     <string name="sem_2">SEM 2</string>
+
+    <string-array name="colleges">
+        <item>DEPSTAR</item>
+        <item>CSPIT</item>
+        <item>I2IM</item>
+        <item>RPCP</item>
+        <item>CMPICA</item>
+        <item>PDPIAS</item>
+    </string-array>
+    <string-array name="departments">
+        <item>CE</item>
+        <item>CSE</item>
+        <item>IT</item>
+        <item>EC</item>
+        <item>EE</item>
+        <item>MECH</item>
+        <item>CIVIL</item>
+    </string-array>
+    <string-array name="semesters">
+        <item>SEM 1</item>
+        <item>SEM 2</item>
+        <item>SEM 3</item>
+        <item>SEM 4</item>
+        <item>SEM 5</item>
+        <item>SEM 6</item>
+        <item>SEM 7</item>
+        <item>SEM 8</item>
+    </string-array>
+
 </resources>

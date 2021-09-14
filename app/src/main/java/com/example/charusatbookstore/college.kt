@@ -70,6 +70,10 @@ class college : AppCompatActivity() {
                 startActivity(Intent(this, edit_profile::class.java))
                 true
             }
+            R.id.ubook->{
+                startActivity(Intent(this,upload::class.java))
+                true
+            }
             else ->super.onOptionsItemSelected(item)
 
         }

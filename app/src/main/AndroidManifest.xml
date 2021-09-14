@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.charusatbookstore">
 
     <application
@@ -9,6 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CharusatBookStore">
+        <activity
+            android:name=".showbook"
+            android:exported="true" />
+        <activity
+            android:name=".upload"
+            android:exported="true"
+            tools:ignore="MissingClass" />
         <activity
             android:name=".forget_password"
             android:exported="true" />
@@ -32,10 +40,10 @@
             android:exported="true" />
         <activity
             android:name=".sem"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".college"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".rpcpdepartment"
             android:exported="true" />
@@ -50,7 +58,7 @@
             android:exported="true" />
         <activity
             android:name=".cspitdepartment"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".cmpicadepartment"
             android:exported="true" />
