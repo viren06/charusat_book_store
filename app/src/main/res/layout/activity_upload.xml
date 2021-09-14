@@ -109,7 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <EditText
-        android:id="@+id/etsubjectid"
+        android:id="@+id/subjectetid"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/priceetid"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_marginTop="34dp"
@@ -130,10 +130,10 @@
         android:textColorHint="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etsubjectid" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectetid" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/descriptionetid"
         android:layout_width="210dp"
         android:layout_height="150dp"
         android:layout_marginTop="17dp"
@@ -144,10 +144,11 @@
         android:textColorHint="@color/black"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/priceetid"
+        tools:ignore="UnknownId" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/uploadbuttonid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="115dp"
