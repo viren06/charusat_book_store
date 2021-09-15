@@ -1,5 +1,6 @@
 package com.example.charusatbookstore
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -17,6 +18,11 @@ class introductory : AppCompatActivity() {
         splashimg.animate().setDuration(1000).setStartDelay(4000)
         logo.animate().setDuration(1000).setStartDelay(4000)
         lottieAnimationView.animate().setDuration(1000).setStartDelay(4000)
+
+        lottieAnimationView.setOnClickListener{
+            val intent = Intent(this,login::class.java)
+            startActivity(intent)
+        }
     }
 }
 
