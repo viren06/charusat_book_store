@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign_up">
+    tools:context=".sign_up"
+    android:background="@color/secondarylightblue">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout5"
@@ -99,7 +100,8 @@
             android:id="@+id/signup_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="mobile number" />
+            android:hint="mobile number"
+            android:textColorHint="@color/secondarytext"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -111,6 +113,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:text="Sign Up"
+        android:backgroundTint="@color/primarydarkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
@@ -123,6 +126,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:text="Already have Account? click hear"
+        android:textColor="@color/secondarytext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

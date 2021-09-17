@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".cmpicadepartment"
-    android:background="@color/background">
+    android:background="@color/secondarylightblue">
 
     <LinearLayout
         android:layout_width="239dp"
@@ -24,8 +24,8 @@
             android:textSize="25dp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:backgroundTint="@color/cmpicadepcolor"
-            android:textColor="@color/black"
+            android:backgroundTint="@color/primarydarkblue"
+            android:textColor="@color/primarytext"
             android:fontFamily="casual"/>
 
         <Button
@@ -36,8 +36,8 @@
             android:textSize="25dp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:backgroundTint="@color/cmpicadepcolor"
-            android:textColor="@color/black"
+            android:backgroundTint="@color/primarydarkblue"
+            android:textColor="@color/primarytext"
             android:fontFamily="casual"/>
     </LinearLayout>
 
