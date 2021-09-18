@@ -3,6 +3,7 @@ package com.example.charusatbookstore
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.ImageView
 import com.airbnb.lottie.LottieAnimationView
 
@@ -19,10 +20,10 @@ class introductory : AppCompatActivity() {
         logo.animate().setDuration(1000).setStartDelay(4000)
         lottieAnimationView.animate().setDuration(1000).setStartDelay(4000)
 
-        lottieAnimationView.setOnClickListener{
+        Handler().postDelayed({
             val intent = Intent(this,login::class.java)
             startActivity(intent)
-        }
+        },3000)
     }
 }
 
