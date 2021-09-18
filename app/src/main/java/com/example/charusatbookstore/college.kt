@@ -64,10 +64,11 @@ class college : AppCompatActivity() {
             R.id.logout->{
                 FirebaseAuth.getInstance().signOut()
                 startActivity(Intent(this, login::class.java))
+                finish()
                 true
             }
             R.id.edit->{
-                startActivity(Intent(this, edit_profile::class.java))
+                startActivity(Intent(this, Edit_profile::class.java))
                 true
             }
             R.id.ubook->{
