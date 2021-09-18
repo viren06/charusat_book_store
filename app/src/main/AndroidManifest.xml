@@ -30,7 +30,8 @@
             android:name=".forget_password"
             android:exported="true" />
         <activity
-            android:name=".edit_profile"
+            android:name=".Edit_profile"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             android:exported="true" />
         <activity
             android:name=".Depstar_CE_Sem4_Subject"
@@ -82,6 +83,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
     </application>
 
 </manifest>
