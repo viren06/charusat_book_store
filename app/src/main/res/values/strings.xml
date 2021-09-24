@@ -12,6 +12,10 @@
         <item>CMPICA</item>
         <item>PDPIAS</item>
     </string-array>
+    <array name="clg">
+        <item>depstar</item>
+        <item>cspit</item>
+    </array>
     <string-array name="departments">
         <item>CE</item>
         <item>CSE</item>

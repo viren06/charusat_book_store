@@ -7,59 +7,96 @@
     android:background="@color/secondarylightblue"
     tools:context=".upload">
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/book_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_menu_book_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/upload_bookPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="174dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Take photo of the Book"
+        android:textColor="#73C1EA"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_photo" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="82dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="37dp"
         android:text="College"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="210dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="64dp"
         android:entries="@array/colleges"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+         />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="210dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="64dp"
         android:entries="@array/departments"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="20dp"
         android:text="Department"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="20dp"
         android:text="Semester"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinner3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -68,10 +105,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="24dp"
         android:text="Subject"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/subjectetid"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -79,86 +118,101 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="24dp"
         android:text="Price"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/priceetid"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toTopOf="@+id/priceetid" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="106dp"
         android:text="Book Description"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/uploadbuttonid"
+        app:layout_constraintEnd_toStartOf="@+id/descriptionetid"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Spinner
         android:id="@+id/spinner3"
-        android:layout_width="210dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="70dp"
         android:entries="@array/semesters"
+        app:layout_constraintBottom_toBottomOf="@+id/subjectetid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/subjectetid"
-        android:layout_width="210dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="68dp"
         android:hint="Enter Subject"
         android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/priceetid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/priceetid"
-        android:layout_width="210dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
         android:hint="Enter Price"
-        android:textColorHint="@color/black"
         android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subjectetid" />
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/descriptionetid"
-        android:layout_width="210dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="17dp"
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="85dp"
         android:layout_marginEnd="29dp"
+        android:layout_marginBottom="84dp"
         android:ems="10"
         android:gravity="top"
         android:hint="Description"
-        android:textColorHint="@color/black"
         android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/uploadbuttonid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/priceetid"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/subjectetid"
         tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/uploadbuttonid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="115dp"
-        android:layout_marginEnd="115dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="16dp"
         android:text="UPLOAD BOOK"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionetid"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
