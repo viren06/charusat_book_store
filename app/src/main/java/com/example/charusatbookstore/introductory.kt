@@ -23,6 +23,7 @@ class introductory : AppCompatActivity() {
         Handler().postDelayed({
             val intent = Intent(this,login::class.java)
             startActivity(intent)
+            finish()
         },3000)
     }
 }
