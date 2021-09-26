@@ -12,7 +12,11 @@
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_pdpiasdepartment.xml" value="0.20520833333333333" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_sem.xml" value="0.35597826086956524" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/semester.xml" value="0.33" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_upload.xml" value="0.25416666666666665" />
+        <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_showbook.xml" value="0.264" />
+        <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_showbooknew.xml" value="0.25416666666666665" />
+        <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_showbooknew2.xml" value="0.24010416666666667" />
+        <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_upload.xml" value="0.1" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_cmpicadepartment.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_college.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_cspitdepartment.xml" value="0.265625" />
@@ -30,12 +34,12 @@
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_sem.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_showbook.xml" value="0.2128623188405797" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_sign_up.xml" value="0.265625" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_upload.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_upload.xml" value="0.2128623188405797" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

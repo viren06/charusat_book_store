@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
 import com.google.firebase.auth.FirebaseAuth
@@ -53,6 +54,7 @@ class Edit_profile : AppCompatActivity() {
         progressBar=findViewById<ProgressBar>(R.id.progressBar)
          var edit_change_profile=findViewById<TextView>(R.id.edit_change_profile)
         var btnclose=findViewById<ImageView>(R.id.btnclose)
+
 
         val viewModel=ViewModelProviders.of(this).get(Edit_ProfileViewModel::class.java)
         val user=FirebaseAuth.getInstance().currentUser!!.uid
