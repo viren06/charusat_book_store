@@ -3,6 +3,7 @@
     <string name="sem1">Sem 1</string>
     <string name="sem_1">Sem 1</string>
     <string name="sem_2">SEM 2</string>
+    <string name="btn_purchase">Purchase Now</string>
 
     <string-array name="colleges">
         <item>DEPSTAR</item>
