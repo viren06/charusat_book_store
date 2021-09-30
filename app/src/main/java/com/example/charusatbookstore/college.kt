@@ -1,6 +1,7 @@
 package com.example.charusatbookstore
 
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,9 +9,13 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 
+
+
 class college : AppCompatActivity() {
+
     override fun onStart(){
         super.onStart()
         var user=FirebaseAuth.getInstance().currentUser
@@ -63,8 +68,14 @@ class college : AppCompatActivity() {
         return when(item.itemId){
             R.id.logout->{
                 FirebaseAuth.getInstance().signOut()
-                startActivity(Intent(this, login::class.java))
-                finish()
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle("LOGOUT")
+                builder.setMessage("Do You want to logout from Applicatiom?")
+                builder.setPositiveButton("Yes",{ dialogInterface : DialogInterface, i : Int ->
+                    finish()
+                    startActivity(Intent(this, login::class.java))})
+                builder.setNegativeButton("No",{dialogInterface : DialogInterface, i: Int ->})
+                builder.show()
                 true
             }
             R.id.edit->{
@@ -79,4 +90,5 @@ class college : AppCompatActivity() {
 
         }
     }
+
 }

@@ -30,5 +30,6 @@
     <color name="secondarydarkblue">#5d99c6</color>
     <color name="secondarylightblue">#c3fdff</color>
     <color name="secondarytext" tools:ignore="DuplicateDefinition">#000000</color>
+    <color name="colorAccent">#FFEB3B</color>
 
 </resources>
