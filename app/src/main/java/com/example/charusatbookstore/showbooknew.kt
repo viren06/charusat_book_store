@@ -11,17 +11,5 @@ class showbooknew : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_showbooknew)
 
-        val lv = findViewById<ListView>(R.id.listview)
-        val names = arrayOf("C", "C++", "python")
-
-        val arrayAdapter: ArrayAdapter<String> = ArrayAdapter(
-            this, android.R.layout.simple_list_item_1,names
-        )
-
-        lv.adapter = arrayAdapter
-
-        lv.setOnItemClickListener { adapterView, view, i, l ->
-            Toast.makeText(this,"Item Selected"+names[i],Toast.LENGTH_SHORT).show()
-        }
     }
 }
