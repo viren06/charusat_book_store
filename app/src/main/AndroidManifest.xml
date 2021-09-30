@@ -11,10 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharusatBookStore">
         <activity
-            android:name=".product_detail"
+            android:name=".showbooknew"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".book_upload"
             android:exported="true" />
         <activity
-            android:name=".showbooknew"
+            android:name=".introductory"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".book_upload"
-            android:exported="true" />
-        <activity
-            android:name=".introductory"
-            android:exported="true"></activity>
         <activity
             android:name=".showbook"
             android:exported="true" />
