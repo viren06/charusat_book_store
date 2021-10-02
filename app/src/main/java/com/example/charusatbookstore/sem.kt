@@ -12,7 +12,7 @@ class sem : AppCompatActivity() {
 
         val iv1=findViewById<ImageView>(R.id.sem1)
         iv1.setOnClickListener {
-            val Intent = Intent(this,Depstar_CE_Sem1_Subject::class.java)
+            val Intent = Intent(this,showbook::class.java)
             startActivity(Intent)
         }
         val iv2=findViewById<ImageView>(R.id.sem2)

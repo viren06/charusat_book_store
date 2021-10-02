@@ -8,8 +8,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvbook_show"
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/show_book_view"
+        tools:itemCount="10"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
