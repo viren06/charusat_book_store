@@ -1,6 +1,7 @@
 package com.example.charusatbookstore
 
 import android.app.Activity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,8 +23,8 @@ class bookItemAdapter(var ctx:Activity, var arlist: ArrayList<bookModel>):Recycl
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewholder {
-        val v=LayoutInflater.from(parent.context).inflate(R.layout.show_book_view,parent,false)
-        //val v=ctx.layoutInflater.inflate(R.layout.show_book_view,parent,false)
+        //val v=LayoutInflater.from(parent.context).inflate(R.layout.show_book_view,parent,false)
+        val v=ctx.layoutInflater.inflate(R.layout.show_book_view,parent,false)
         return  viewholder(v)
     }
 
@@ -34,17 +35,19 @@ class bookItemAdapter(var ctx:Activity, var arlist: ArrayList<bookModel>):Recycl
         holder.bookname.text=arlist[position].discription
         holder.price.text=arlist[position].price+"₹"
         holder.subjectname.text=arlist[position].subject
-        //holder.bookimage.=arlist[position].img
-        //Glide.with(holder.bookimage.context).load(bookModel.getSurl()).placeholder(R.drawable.common_google_signin_btn_icon_dark)
-//        if(arlist[position].img.toString()!=""){
-//            val storage =FirebaseStorage.getInstance()
-//            val storageReference =storage.getReference(arlist[position].img.toString())
-//
-//            storageReference.downloadUrl.addOnSuccessListener {
-//                val img=it.toString()
-//                Glide.with(ctx).load(img).into(holder.bookimage).view
-//            }
-//        }
+
+        if(arlist[position].img.toString()!=""){
+            val storage =FirebaseStorage.getInstance()
+            val storageReference =storage.getReferenceFromUrl(arlist[position].img.toString())
+
+            storageReference.downloadUrl.addOnSuccessListener {
+                val img=it.toString()
+                Glide.with(ctx).load(img).into(holder.bookimage).view
+            }
+        }
+        holder.itemView.setOnClickListener{
+            //var int1=Intent(ctx,)
+        }
 
 
     }
