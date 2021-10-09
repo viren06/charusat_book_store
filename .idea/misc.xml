@@ -13,6 +13,8 @@
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_sem.xml" value="0.35597826086956524" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/semester.xml" value="0.33" />
         <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_cspitdepartment.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_description.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_details.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_upload.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_cmpicadepartment.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_college.xml" value="0.265625" />
@@ -35,8 +37,10 @@
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_showbooknew.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_sign_up.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_upload.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/book_discription_view.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/price_review_title.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/show_book_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/suggested_for_you_section.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>
     </option>

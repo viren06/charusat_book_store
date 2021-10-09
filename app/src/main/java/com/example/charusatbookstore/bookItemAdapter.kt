@@ -46,7 +46,13 @@ class bookItemAdapter(var ctx:Activity, var arlist: ArrayList<bookModel>):Recycl
             }
         }
         holder.itemView.setOnClickListener{
-            //var int1=Intent(ctx,)
+            var int1=Intent(ctx,book_details::class.java)
+            int1.putExtra("bid",arlist[position].bookid.toString())
+            int1.putExtra("bname",arlist[position].discription.toString())
+            int1.putExtra("price",arlist[position].price.toString())
+            int1.putExtra("userid",arlist[position].uid.toString())
+            int1.putExtra("sub",arlist[position].subject.toString())
+            ctx.startActivity(int1)
         }
 
 

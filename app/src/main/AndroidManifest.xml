@@ -11,10 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CharusatBookStore">
         <activity
+            android:name=".book_details"
+            android:exported="true" />
+        <activity
+            android:name=".Book_description"
+            android:exported="true" />
+        <activity
             android:name=".showbooknew"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".book_upload"
             android:exported="true" />
@@ -86,7 +90,8 @@
             android:exported="true" />
         <activity
             android:name=".login"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
