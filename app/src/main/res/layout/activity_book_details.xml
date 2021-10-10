@@ -9,10 +9,12 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="406dp"
-        android:layout_height="312dp"
+        android:layout_height="0dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="3dp"
+        android:layout_marginBottom="296dp"
+        app:layout_constraintBottom_toTopOf="@+id/button28"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -132,6 +134,17 @@
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="74dp"
+        android:text="Mail to seller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

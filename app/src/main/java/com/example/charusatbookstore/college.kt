@@ -86,6 +86,10 @@ class college : AppCompatActivity() {
                 startActivity(Intent(this,upload::class.java))
                 true
             }
+            R.id.mybooks->{
+                startActivity(Intent(this,User_book::class.java))
+                true
+            }
             else ->super.onOptionsItemSelected(item)
 
         }
