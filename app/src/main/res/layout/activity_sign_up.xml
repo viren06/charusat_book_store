@@ -101,6 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="mobile number"
+            android:inputType="phone"
             android:textColorHint="@color/secondarytext"/>
     </com.google.android.material.textfield.TextInputLayout>
 
