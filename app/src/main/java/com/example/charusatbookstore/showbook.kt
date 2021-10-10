@@ -27,6 +27,10 @@ class showbook : AppCompatActivity() {
         //var selected= arrayListOf<bookModel>()
         bookRecyclerView =findViewById(R.id.rvbook_show)
 
+        var college=intent.getStringExtra("college")
+        var department=intent.getStringExtra("department")
+        var sem=intent.getStringExtra("sem")
+
 
         val myref=database.getReference("Book")
         myref.addValueEventListener(object : ValueEventListener{
@@ -39,7 +43,10 @@ class showbook : AppCompatActivity() {
                         val value = v.getValue(bookModel::class.java)
                         Log.d("key", value.toString())
                         if (value != null) {
-                            data.add(value)
+                            if(value.status=="sell" && value.college==college && value.department==department && value.semester==sem ){
+                                data.add(value)
+                            }
+
                         }
                     }
                     //selected=ad.getselectedlist()

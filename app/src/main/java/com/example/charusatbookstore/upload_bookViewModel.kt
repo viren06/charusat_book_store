@@ -41,7 +41,7 @@ class upload_bookViewModel : ViewModel(){
         discriptiontext: String,
         img: String,
         bookid: String,
-
+        status: String,
         username: String
     ) {
         var Book=HashMap<String,Any>()
@@ -54,6 +54,7 @@ class upload_bookViewModel : ViewModel(){
         Book["discription"]=discriptiontext
         Book["img"]=img
         Book["bookid"]=bookid
+        Book["status"]=status
         myref.child(bookid).setValue(Book)
     }
 

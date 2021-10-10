@@ -82,6 +82,7 @@ class upload : AppCompatActivity() {
                                 descriptiontext.text.toString(),
                                 downloadurl.toString(),
                                 key.toString(),
+                                "sell",
                                 username!!
                             )
                             progressDialog.dismiss()
