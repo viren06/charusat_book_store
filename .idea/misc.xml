@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_book_description.xml" value="0.28940217391304346" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_book_details.xml" value="0.28940217391304346" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_book_upload.xml" value="0.2957427536231884" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_cmpicadepartment.xml" value="0.20520833333333333" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_cspitdepartment.xml" value="0.20520833333333333" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_depstardepartment.xml" value="0.20520833333333333" />
@@ -10,11 +13,16 @@
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_login.xml" value="0.20520833333333333" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_pdpiasdepartment.xml" value="0.20520833333333333" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_product_detail.xml" value="0.21784420289855072" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_sem.xml" value="0.35597826086956524" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_upload.xml" value="0.21784420289855072" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/activity_user_book.xml" value="0.28940217391304346" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/book_discription_view.xml" value="0.28940217391304346" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/price_review_title.xml" value="0.21784420289855072" />
         <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/semester.xml" value="0.33" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/show_book_view.xml" value="0.2957427536231884" />
+        <entry key="..\:/1_Study/5_Android Studio/charusat_book_store/app/src/main/res/layout/suggested_for_you_section.xml" value="0.21784420289855072" />
         <entry key="..\:/CLG/SEM 5/charusat_book_store/app/src/main/res/layout/activity_cspitdepartment.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_description.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_details.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_book_upload.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_cmpicadepartment.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_college.xml" value="0.265625" />
@@ -29,21 +37,13 @@
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_login.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_main.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_pdpiasdepartment.xml" value="0.265625" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_product_detail.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_rpcpdepartment.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_sem.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_showbook.xml" value="0.2128623188405797" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_showbooknew.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_sign_up.xml" value="0.265625" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_upload.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/activity_user_book.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/book_discription_view.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/price_review_title.xml" value="0.25416666666666665" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/show_book_view.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/suggested_for_you_section.xml" value="0.25416666666666665" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/userbooks.xml" value="0.2536231884057971" />
-        <entry key="..\:/sem5/charusatbookstore/app/src/main/res/layout/userbooks_view.xml" value="0.22418478260869565" />
         <entry key="..\:/sem5/charusatbookstore/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>
     </option>

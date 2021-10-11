@@ -12,56 +12,12 @@
         android:padding="@dimen/small">
 
         <TextView
-            android:id="@+id/titleLamp"
+            android:id="@+id/bookSubject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Book"
+            android:text="Book Subject"
             android:textColor="@color/black"
             android:textSize="18sp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/small">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:padding="@dimen/xsmall"
-                android:src="@drawable/star_clr" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:padding="@dimen/xsmall"
-                android:src="@drawable/star_clr" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:padding="@dimen/xsmall"
-                android:src="@drawable/star_clr" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:padding="@dimen/xsmall"
-                android:src="@drawable/star_clr" />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:padding="@dimen/xsmall"
-                android:src="@drawable/star_grey" />
-
-            <TextView
-                android:id="@+id/reviewLamp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="249 Review"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-        </LinearLayout>
 
     </LinearLayout>
 

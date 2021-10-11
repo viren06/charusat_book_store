@@ -187,8 +187,8 @@
 
     <EditText
         android:id="@+id/descriptionetid"
-        android:layout_width="0dp"
-        android:layout_height="97dp"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
         android:layout_marginTop="85dp"
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="84dp"
@@ -201,18 +201,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/subjectetid"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/uploadbookshowbuttonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="76dp"
+        android:text="CHECK UPLOAD BOOK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionetid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/uploadbuttonid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginEnd="124dp"
         android:layout_marginBottom="16dp"
         android:text="UPLOAD BOOK"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/descriptionetid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

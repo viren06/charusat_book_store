@@ -26,6 +26,7 @@ class bookItemAdapter(var ctx:Activity, var arlist: ArrayList<bookModel>):Recycl
         //val v=LayoutInflater.from(parent.context).inflate(R.layout.show_book_view,parent,false)
         val v=ctx.layoutInflater.inflate(R.layout.show_book_view,parent,false)
         return  viewholder(v)
+
     }
 
     override fun onBindViewHolder(holder: viewholder, position: Int) {

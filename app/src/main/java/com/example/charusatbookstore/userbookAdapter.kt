@@ -42,6 +42,16 @@ class userbookAdapter(var ctx: Activity, var arlist: ArrayList<bookModel>): Recy
 
         var book=arlist[position]
         book.status="sold"
+        holder.itemView.setOnClickListener{
+            var int1=Intent(ctx,book_details::class.java)
+            int1.putExtra("bid",arlist[position].bookid.toString())
+            int1.putExtra("bname",arlist[position].discription.toString())
+            int1.putExtra("price",arlist[position].price.toString())
+            int1.putExtra("userid",arlist[position].uid.toString())
+            int1.putExtra("sub",arlist[position].subject.toString())
+            int1.putExtra("flag","1")
+            ctx.startActivity(int1)
+        }
         holder.sold.setOnClickListener {
             val builder = AlertDialog.Builder(ctx)
             builder.setTitle("SOLD")
