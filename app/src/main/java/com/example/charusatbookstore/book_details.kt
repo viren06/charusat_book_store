@@ -73,6 +73,22 @@ class book_details : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+        val userREf=database.getReference("user")
+        userREf.child(uid!!).addListenerForSingleValueEvent(object :ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val uvalue=snapshot.getValue(userModel::class.java)
+                if(uvalue!=null){
+                    Uploadby.setText(uvalue.username)
+                    email.setText(uvalue.email)
+                    number.setText(uvalue.mobile_number)
+                }
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
         fun sendEmail(recipient: String, subject: String, message: String) {
             /*ACTION_SEND action to launch an email client installed on your Android device.*/
             val mIntent = Intent(Intent.ACTION_SEND)
@@ -99,22 +115,7 @@ class book_details : AppCompatActivity() {
                 //get and show exception message
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
             }
-        val userREf=database.getReference("user")
-        userREf.child(uid!!).addListenerForSingleValueEvent(object :ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val uvalue=snapshot.getValue(userModel::class.java)
-                if(uvalue!=null){
-                    Uploadby.setText(uvalue.username)
-                    email.setText(uvalue.email)
-                    number.setText(uvalue.mobile_number)
-                }
-            }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-
-        })
 
     }
     }
