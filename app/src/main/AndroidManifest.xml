@@ -20,9 +20,6 @@
             android:name=".Book_description"
             android:exported="true" />
         <activity
-            android:name=".showbooknew"
-            android:exported="true" />
-        <activity
             android:name=".book_upload"
             android:exported="true" />
         <activity
@@ -60,9 +57,6 @@
             android:exported="true" />
         <activity
             android:name=".Depstar_CE_Sem3_Subject"
-            android:exported="true" />
-        <activity
-            android:name=".cspitsem1subject"
             android:exported="true" />
         <activity
             android:name=".sem"

@@ -25,6 +25,14 @@
         <item>EE</item>
         <item>MECH</item>
         <item>CIVIL</item>
+        <item>BBA</item>
+        <item>MBA</item>
+        <item>B.Pharm</item>
+        <item>M.Pharm</item>
+        <item>B.Sci</item>
+        <item>M.Sci</item>
+        <item>BCA</item>
+        <item>MCA</item>
     </string-array>
     <string-array name="semesters">
         <item>SEM 1</item>
