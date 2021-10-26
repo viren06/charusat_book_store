@@ -10,27 +10,22 @@
         android:id="@+id/book_photo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="58dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="96dp"
         android:src="@drawable/ic_baseline_menu_book_24"
-        app:layout_constraintBottom_toTopOf="@+id/uploadbuttonid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/upload_bookPhoto"></de.hdodenhof.circleimageview.CircleImageView>
+        app:layout_constraintTop_toBottomOf="@+id/descriptionetid"></de.hdodenhof.circleimageview.CircleImageView>
 
     <TextView
         android:id="@+id/upload_bookPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="77dp"
         android:fontFamily="sans-serif-black"
         android:text="Choose Photos"
         android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/uploadbuttonid"
-        app:layout_constraintEnd_toStartOf="@+id/book_photo"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_photo" />
 
     <TextView
         android:id="@+id/textView2"
@@ -38,13 +33,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="46dp"
         android:text="College"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,155 +43,151 @@
         android:id="@+id/spinner"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginStart="21dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="16dp"
         android:entries="@array/colleges"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
         android:entries="@array/departments"
-        app:layout_constraintBottom_toTopOf="@+id/spinner3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
-        android:layout_marginBottom="39dp"
+        android:layout_marginTop="46dp"
         android:text="Department"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="52dp"
         android:text="Semester"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginTop="56dp"
         android:text="Subject"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="126dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="42dp"
         android:text="Price"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="99dp"
-        android:text="Book Description"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="40dp"
+        android:text="Book Name"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/upload_bookPhoto"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
         android:entries="@array/semesters"
-        app:layout_constraintBottom_toTopOf="@+id/subjectetid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <EditText
         android:id="@+id/subjectetid"
         android:layout_width="200dp"
         android:layout_height="53dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="21dp"
         android:hint="Enter Subject"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/priceetid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <EditText
         android:id="@+id/priceetid"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="14dp"
         android:ems="10"
         android:hint="Enter Price"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/descriptionetid"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/subjectetid" />
 
     <EditText
         android:id="@+id/descriptionetid"
         android:layout_width="200dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="22dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="18dp"
         android:ems="10"
         android:gravity="top"
-        android:hint="Description"
+        android:hint="Enter Name"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/book_photo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/priceetid"
         tools:ignore="UnknownId" />
 
     <Button
         android:id="@+id/uploadbuttonid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="48dp"
         android:text="UPLOAD BOOK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="87dp"
+        android:text="Upload Photo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
