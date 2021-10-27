@@ -8,80 +8,217 @@
     android:background="@color/secondarylightblue">
 
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="363dp"
-        android:layout_height="535dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/idimageButtondepstar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            app:layout_column="0"
-            app:layout_row="0"
-            app:srcCompat="@drawable/depstar"
-            tools:ignore="SpeakableTextPresentCheck" />
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rowCount="3">
 
 
-        <ImageButton
-            android:id="@+id/idimageButtoncmpica"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            app:layout_column="0"
-            app:layout_row="1"
-            app:srcCompat="@drawable/cmpica"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/idimageButtonpdpias"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            app:layout_column="1"
-            app:layout_row="0"
-            app:srcCompat="@drawable/pdpias"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <ImageButton
-            android:id="@+id/idimageButtoncspit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            app:layout_column="1"
-            app:layout_row="1"
-            app:srcCompat="@drawable/cspit"
-            tools:ignore="SpeakableTextPresentCheck" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
 
 
-        <ImageButton
-            android:id="@+id/idimageButtonrpcp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            app:layout_column="0"
-            app:layout_row="2"
-            app:srcCompat="@drawable/rpcp"
-            tools:ignore="SpeakableTextPresentCheck" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryblue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-        <ImageButton
-            android:id="@+id/idimageButtoni2im"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/background"
-            app:layout_column="1"
-            app:layout_row="2"
-            app:srcCompat="@drawable/i2im"
-            tools:ignore="SpeakableTextPresentCheck" />
+                    <ImageButton
+                        android:id="@+id/idimageButtondepstar"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:background="@color/background"
+                        app:layout_column="0"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/depstar"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
 
-    </androidx.gridlayout.widget.GridLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryblue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/idimageButtoncmpica"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:background="@color/background"
+                        app:layout_column="0"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/cmpica"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryblue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/idimageButtonpdpias"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:background="@color/background"
+                        app:layout_column="1"
+                        app:layout_row="0"
+                        app:srcCompat="@drawable/pdpias"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryblue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/idimageButtoncspit"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:background="@color/background"
+                        app:layout_column="1"
+                        app:layout_row="1"
+                        app:srcCompat="@drawable/cspit"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryblue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/idimageButtonrpcp"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:background="@color/background"
+                        app:layout_column="0"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/rpcp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primaryblue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/idimageButtoni2im"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:background="@color/background"
+                        app:layout_column="1"
+                        app:layout_row="2"
+                        app:srcCompat="@drawable/i2im"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.gridlayout.widget.GridLayout>
+    </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
