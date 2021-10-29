@@ -55,43 +55,70 @@ class upload : AppCompatActivity() {
         takephoto.setOnClickListener {
             CropImage.activity().setAspectRatio(1, 1).start(this)
         }
+        var isAllFieldsChecked = false
+
         val uploadbtn = findViewById<Button>(R.id.uploadbuttonid)
         uploadbtn.setOnClickListener {
-            var progressDialog = ProgressDialog(this)
-            progressDialog.setTitle("uploading Book Details")
-            progressDialog.setMessage("Your book will upload in few seconds")
-            progressDialog.show()
+            isAllFieldsChecked = checkAllFields()
+            if (isAllFieldsChecked) {
+                var progressDialog = ProgressDialog(this)
+                progressDialog.setTitle("uploading Book Details")
+                progressDialog.setMessage("Your book will upload in few seconds")
+                progressDialog.show()
 
-            var bookStorage = FirebaseStorage.getInstance().reference.child("book")
-            if (imaguri != null) {
-                val fileref = bookStorage!!.child(UUID.randomUUID().toString())
-                val uploadTask = fileref.putFile(imaguri!!)
-                if (uploadTask != null) {
-                    uploadTask.addOnCompleteListener {
-                        if (it.isSuccessful) {
-                            var downloadurl = fileref
-                            var firebase = FirebaseDatabase.getInstance().getReference("Book")
-                            var key = firebase.push().key
-                            viewModel.savedata(
-                                firebaseuid,
-                                college1.selectedItem.toString(),
-                                department.selectedItem.toString(),
-                                semester.selectedItem.toString(),
-                                subjecttext.text.toString(),
-                                pricetext.text.toString(),
-                                descriptiontext.text.toString(),
-                                downloadurl.toString(),
-                                key.toString(),
-                                "sell",
-                                username!!
-                            )
-                            progressDialog.dismiss()
-                            startActivity(Intent(this, college::class.java))
+
+                var bookStorage = FirebaseStorage.getInstance().reference.child("book")
+                if (imaguri != null) {
+                    val fileref = bookStorage!!.child(UUID.randomUUID().toString())
+                    val uploadTask = fileref.putFile(imaguri!!)
+                    if (uploadTask != null) {
+                        uploadTask.addOnCompleteListener {
+                            if (it.isSuccessful) {
+                                var downloadurl = fileref
+                                var firebase = FirebaseDatabase.getInstance().getReference("Book")
+                                var key = firebase.push().key
+                                viewModel.savedata(
+                                    firebaseuid,
+                                    college1.selectedItem.toString(),
+                                    department.selectedItem.toString(),
+                                    semester.selectedItem.toString(),
+                                    subjecttext.text.toString(),
+                                    pricetext.text.toString(),
+                                    descriptiontext.text.toString(),
+                                    downloadurl.toString(),
+                                    key.toString(),
+                                    "sell",
+                                    username!!
+                                )
+                                progressDialog.dismiss()
+                                startActivity(Intent(this, college::class.java))
+                            }
                         }
                     }
                 }
             }
         }
+    }
+    private fun checkAllFields(): Boolean {
+
+        if (subjecttext.text.isEmpty()){
+            subjecttext.setError("Enter Subject Name")
+            return false
+        }
+        if (pricetext.text.isEmpty()){
+            pricetext.setError("Enter Book Price")
+            return false
+        }
+        if (descriptiontext.text.isEmpty()){
+            descriptiontext.setError("Enter Book Name")
+            return false
+        }
+//        if (imaguri){
+//            bookphoto.setError("Enter Book Name")
+//            return false
+//        }
+        return true
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -14,14 +14,19 @@ class rpcpdepartment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rpcpdepartment)
+        var college= intent.getStringExtra("college")
         val ib=findViewById<Button>(R.id.button13)
         ib.setOnClickListener {
             val Intent= Intent(this,sem::class.java)
+            Intent.putExtra("department","B.Pharm")
+            Intent.putExtra("college",college)
             startActivity(Intent)
         }
         val ib1=findViewById<Button>(R.id.button14)
         ib1.setOnClickListener {
             val Intent= Intent(this,sem::class.java)
+            Intent.putExtra("department","M.Pharm")
+            Intent.putExtra("college",college)
             startActivity(Intent)
         }
     }

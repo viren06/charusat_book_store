@@ -14,14 +14,21 @@ class cmpicadepartment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cmpicadepartment)
+
+        var college= intent.getStringExtra("college")
+
         val ib=findViewById<Button>(R.id.button11)
         ib.setOnClickListener {
             val Intent= Intent(this,sem::class.java)
+            Intent.putExtra("department","BCA")
+            Intent.putExtra("college",college)
             startActivity(Intent)
         }
         val ib1=findViewById<Button>(R.id.button12)
         ib1.setOnClickListener {
             val Intent= Intent(this,sem::class.java)
+            Intent.putExtra("department","MCA")
+            Intent.putExtra("college",college)
             startActivity(Intent)
         }
     }

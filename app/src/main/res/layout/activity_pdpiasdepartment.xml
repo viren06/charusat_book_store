@@ -20,7 +20,7 @@
             android:id="@+id/button15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bsc-Micro"
+            android:text="B.Science"
             android:textSize="25dp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -32,7 +32,7 @@
             android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bsc-chem"
+            android:text="M.Science"
             android:textSize="25dp"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -40,41 +40,41 @@
             android:textColor="@color/primarytext"
             android:fontFamily="casual"/>
 
-        <Button
-            android:id="@+id/button17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Msc-Phy"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:backgroundTint="@color/primarydarkblue"
-            android:textColor="@color/primarytext"
-            android:fontFamily="casual"/>
+<!--        <Button-->
+<!--            android:id="@+id/button17"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Msc-Phy"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textAlignment="center"-->
+<!--            android:backgroundTint="@color/primarydarkblue"-->
+<!--            android:textColor="@color/primarytext"-->
+<!--            android:fontFamily="casual"/>-->
 
-        <Button
-            android:id="@+id/button18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Msc-Maths"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:backgroundTint="@color/primarydarkblue"
-            android:textColor="@color/primarytext"
-            android:fontFamily="casual"/>
+<!--        <Button-->
+<!--            android:id="@+id/button18"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Msc-Maths"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textAlignment="center"-->
+<!--            android:backgroundTint="@color/primarydarkblue"-->
+<!--            android:textColor="@color/primarytext"-->
+<!--            android:fontFamily="casual"/>-->
 
-        <Button
-            android:id="@+id/button19"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Msc-Micro"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:backgroundTint="@color/primarydarkblue"
-            android:textColor="@color/primarytext"
-            android:fontFamily="casual"/>
+<!--        <Button-->
+<!--            android:id="@+id/button19"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Msc-Micro"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textAlignment="center"-->
+<!--            android:backgroundTint="@color/primarydarkblue"-->
+<!--            android:textColor="@color/primarytext"-->
+<!--            android:fontFamily="casual"/>-->
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

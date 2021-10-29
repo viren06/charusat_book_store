@@ -14,14 +14,19 @@ class i2imdepartment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_i2imdepartment)
+        var college= intent.getStringExtra("college")
         val ib=findViewById<Button>(R.id.button9)
         ib.setOnClickListener {
             val Intent= Intent(this,sem::class.java)
+            Intent.putExtra("department","BBA")
+            Intent.putExtra("college",college)
             startActivity(Intent)
         }
         val ib1=findViewById<Button>(R.id.button10)
         ib1.setOnClickListener {
             val Intent= Intent(this,sem::class.java)
+            Intent.putExtra("department","MBA")
+            Intent.putExtra("college",college)
             startActivity(Intent)
         }
     }
