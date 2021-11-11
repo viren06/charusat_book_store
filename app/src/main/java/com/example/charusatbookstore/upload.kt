@@ -113,10 +113,11 @@ class upload : AppCompatActivity() {
             descriptiontext.setError("Enter Book Name")
             return false
         }
-//        if (imaguri){
-//            bookphoto.setError("Enter Book Name")
-//            return false
-//        }
+        if (imaguri == null){
+            Toast.makeText(this,"Please upload book photo",Toast.LENGTH_LONG).show()
+            //bookphoto.setError("Enter Book Name")
+            return false
+        }
         return true
 
     }

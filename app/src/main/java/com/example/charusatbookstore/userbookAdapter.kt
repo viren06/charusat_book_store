@@ -41,7 +41,7 @@ class userbookAdapter(var ctx: Activity, var arlist: ArrayList<bookModel>): Recy
         holder.book_price.text=arlist[position].price+"₹"
 
         var book=arlist[position]
-        book.status="sold"
+
         holder.itemView.setOnClickListener{
             var int1=Intent(ctx,book_details::class.java)
             int1.putExtra("bid",arlist[position].bookid.toString())
@@ -52,7 +52,17 @@ class userbookAdapter(var ctx: Activity, var arlist: ArrayList<bookModel>): Recy
             int1.putExtra("flag","1")
             ctx.startActivity(int1)
         }
+        if(arlist[position].status=="sold"){
+            holder.sold.isEnabled=false
+        }
+        else
+        {
+            holder.sold.isEnabled=true
+        }
+        book.status="sold"
+
         holder.sold.setOnClickListener {
+            book.status="sold"
             val builder = AlertDialog.Builder(ctx)
             builder.setTitle("SOLD")
             builder.setMessage("Are you sure about selling this book?")
