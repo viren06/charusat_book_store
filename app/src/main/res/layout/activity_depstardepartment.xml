@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".depstardepartment"
+    android:background="@color/secondarydarkblue"
     >
 
     <LinearLayout
@@ -24,8 +25,8 @@
             android:textAlignment="center"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:backgroundTint="@color/primarydarkblue"
-            android:textColor="@color/primarytext"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="casual"/>
 
         <Button
@@ -36,8 +37,8 @@
             android:textAlignment="center"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:backgroundTint="@color/primarydarkblue"
-            android:textColor="@color/primarytext"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="casual"/>
 
         <Button
@@ -48,8 +49,8 @@
             android:textAlignment="center"
             android:textSize="25dp"
             android:textStyle="bold"
-            android:backgroundTint="@color/primarydarkblue"
-            android:textColor="@color/primarytext"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
             android:fontFamily="casual"/>
     </LinearLayout>
 

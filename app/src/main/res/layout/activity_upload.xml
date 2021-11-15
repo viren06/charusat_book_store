@@ -25,6 +25,8 @@
         android:fontFamily="sans-serif-black"
         android:text="Choose Photos"
         android:textSize="20dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book_photo" />
 
@@ -45,6 +47,8 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         android:layout_marginEnd="24dp"
         android:entries="@array/colleges"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +59,8 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         android:layout_marginEnd="24dp"
         android:entries="@array/departments"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,6 +132,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         android:entries="@array/semesters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner2" />
@@ -138,6 +146,8 @@
         android:layout_marginEnd="24dp"
         android:hint="Enter Subject"
         android:textColorHint="@color/black"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
@@ -150,6 +160,8 @@
         android:ems="10"
         android:hint="Enter Price"
         android:inputType="number"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subjectetid" />
@@ -163,6 +175,8 @@
         android:ems="10"
         android:gravity="top"
         android:hint="Enter Name"
+        android:backgroundTintMode="add"
+        android:backgroundTint="@color/primarydarkblue"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,6 +190,7 @@
         android:layout_marginTop="57dp"
         android:layout_marginBottom="48dp"
         android:text="UPLOAD BOOK"
+        android:backgroundTint="@color/primarydarkblue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

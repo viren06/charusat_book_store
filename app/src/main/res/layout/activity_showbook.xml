@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".showbook"
-    android:background="@color/secondarylightblue">
+    android:background="@color/secondarydarkblue">
 
 
     <androidx.recyclerview.widget.RecyclerView
