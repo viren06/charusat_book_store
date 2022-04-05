@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <Button
             android:id="@+id/idbuttoncspitce"
             android:layout_width="match_parent"
@@ -26,8 +27,10 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:backgroundTint="@color/white"
+            app:cornerRadius="24dp"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual" />
+
 
         <Button
             android:id="@+id/button21"
@@ -39,7 +42,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button22"
@@ -51,7 +56,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button23"
@@ -63,7 +70,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button24"
@@ -75,7 +84,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button25"
@@ -87,7 +98,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button26"
@@ -99,7 +112,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

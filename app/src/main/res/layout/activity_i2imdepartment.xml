@@ -27,7 +27,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button10"
@@ -39,7 +41,9 @@
             android:textAlignment="center"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
