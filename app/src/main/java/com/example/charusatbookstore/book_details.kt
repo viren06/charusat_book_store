@@ -1,6 +1,7 @@
 package com.example.charusatbookstore
 
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,8 +17,11 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import com.razorpay.Checkout
+import com.razorpay.PaymentResultListener
+import org.json.JSONObject
 
-class book_details : AppCompatActivity() {
+class book_details : AppCompatActivity() , PaymentResultListener {
     val database = FirebaseDatabase.getInstance()
     private  var mauth: FirebaseAuth?=null
     private var bid:String?=null
@@ -37,12 +41,19 @@ class book_details : AppCompatActivity() {
         var bookimage=findViewById<ImageView>(R.id.imageView)
         var btnmail=findViewById<Button>(R.id.button28)
         var btnsms=findViewById<Button>(R.id.btnsms)
+        var paynow=findViewById<Button>(R.id.btnpay)
         var bid=intent.getStringExtra("bid")
         var bookname=intent.getStringExtra("bname")
         var price=intent.getStringExtra("price")
         var sub=intent.getStringExtra("sub")
         var flag=intent.getStringExtra("flag")
         var uid=intent.getStringExtra("userid")
+
+        paynow.setOnClickListener {
+            savePayments(Price.text.toString().trim().toInt())
+        }
+
+        Checkout.preload(this@book_details)
 
         mauth = FirebaseAuth.getInstance()
         var user=mauth!!.currentUser
@@ -75,6 +86,8 @@ class book_details : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
+
+
 
         btnmail.setOnClickListener(View.OnClickListener { view ->
             // Do some work here
@@ -115,5 +128,37 @@ class book_details : AppCompatActivity() {
 
         })
 
+    }
+    private fun savePayments(amount: Int) {
+        val checkout = Checkout()
+        checkout.setKeyID("rzp_test_yDSK1wCF7eSErr")
+        try {
+            val options = JSONObject()
+            options.put("name", "Razorpay Demo")
+            options.put("description", "If You Like these Tutorials. Buy me a Coffee")
+            //options.put("image","")
+            options.put("theme.color", "#3399cc")
+            options.put("currency", "INR")
+            options.put("amount", amount * 100)
+
+            val retryObj = JSONObject()
+            retryObj.put("enabled", true)
+            retryObj.put("max_count", 4)
+            options.put("retry", retryObj)
+            checkout.open(this@book_details, options)
+
+        } catch (e: Exception) {
+            Toast.makeText(this@book_details, "Error in Payment : " + e.message, Toast.LENGTH_LONG)
+                .show()
+            e.printStackTrace()
+        }
+    }
+
+    override fun onPaymentSuccess(p0: String?) {
+        Toast.makeText(this,"Payment Success: "+ p0,Toast.LENGTH_LONG).show()
+
+    }
+    override fun onPaymentError(p0: Int, p1: String?) {
+        Toast.makeText(this,"Payment Failed: "+ p1,Toast.LENGTH_LONG).show()
     }
 }

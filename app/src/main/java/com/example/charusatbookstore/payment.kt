@@ -38,7 +38,7 @@ class payment : AppCompatActivity(),PaymentResultListener {
             options.put("image","https://s3.amazonaws.com/rzp-mobile/images/rzp.png")
             options.put("theme.color", "#3399cc");
             options.put("currency","INR");
-            options.put("order_id", "order_DBJOWzybf0sJbb");
+            options.put("order_id", "rzp_test_yDSK1wCF7eSErr");
             options.put("amount","50000")//pass amount in currency subunits
 
             /*val retryObj = JSONObject();
