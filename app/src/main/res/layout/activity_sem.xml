@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/secondarydarkblue"
+    android:background="@drawable/img"
     tools:context=".sem">
 
     <ScrollView
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="1dp"
         tools:ignore="MissingConstraints"
-        android:background="@color/secondarydarkblue">
+        android:background="@drawable/img">
 
         <LinearLayout
             android:layout_width="match_parent"

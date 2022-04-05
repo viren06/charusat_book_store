@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".depstardepartment"
-    android:background="@color/secondarydarkblue"
+    android:background="@drawable/img"
     >
 
     <LinearLayout
@@ -27,7 +27,9 @@
             android:textStyle="bold"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button7"
@@ -39,7 +41,9 @@
             android:textStyle="bold"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
 
         <Button
             android:id="@+id/button8"
@@ -51,7 +55,9 @@
             android:textStyle="bold"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
-            android:fontFamily="casual"/>
+            android:fontFamily="casual"
+            app:cornerRadius="24dp"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

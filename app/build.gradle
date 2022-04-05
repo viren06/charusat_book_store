@@ -33,6 +33,9 @@ android {
 
 }
 
+
+
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -57,7 +60,8 @@ dependencies {
 
 
     implementation 'com.airbnb.android:lottie:3.4.1'
+    implementation 'com.razorpay:checkout:1.6.18'
 
-    implementation 'com.razorpay:checkout:1.6.12'
+
 
 }

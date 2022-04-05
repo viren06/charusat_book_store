@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="105dp"
         android:orientation="horizontal"
-        android:weightSum="4">
+        android:weightSum="4"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -60,7 +61,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Sold"
-                android:backgroundTint="@color/primarydarkblue"/>
+                android:backgroundTint="@color/primaryblue"
+                app:cornerRadius="24dp"
+                />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
