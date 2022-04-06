@@ -134,8 +134,8 @@ class book_details : AppCompatActivity() , PaymentResultListener {
         checkout.setKeyID("rzp_test_yDSK1wCF7eSErr")
         try {
             val options = JSONObject()
-            options.put("name", "Razorpay Demo")
-            options.put("description", "If You Like these Tutorials. Buy me a Coffee")
+            options.put("name", "Charusat Book Store")
+            options.put("description", "Thanks for buying book.")
             //options.put("image","")
             options.put("theme.color", "#3399cc")
             options.put("currency", "INR")
